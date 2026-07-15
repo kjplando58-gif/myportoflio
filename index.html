@@ -1,71 +1,557 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kristin Joy Plando | Portfolio</title>
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-50 text-slate-800">
-<header class="bg-slate-900 text-white">
-<div class="max-w-6xl mx-auto p-6 flex justify-between">
-<h1 class="text-2xl font-bold">Kristin Joy Plando</h1>
-<nav class="space-x-4">
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
-</header>
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260715-05-d05fd84"}');</script><script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #171714;
+      --paper: #f4f0e7;
+      --cobalt: #1547e8;
+      --acid: #dfff38;
+      --line: rgba(23, 23, 20, 0.18);
+      --muted: #65645d;
+    }
 
-<section class="max-w-6xl mx-auto px-6 py-20">
-<h2 class="text-5xl font-bold">Technical Writer • Information Systems Student • Creative Writer</h2>
-<p class="mt-6 text-lg text-slate-600">I transform complex technical concepts into clear, engaging documentation while combining analytical thinking with creative storytelling.</p>
-<a class="inline-block mt-8 bg-blue-600 text-white px-6 py-3 rounded-lg" href="https://github.com/kjplando58-gif">View GitHub</a>
-</section>
+    * { box-sizing: border-box; }
 
-<section id="about" class="max-w-6xl mx-auto px-6 py-12">
-<h2 class="text-3xl font-bold mb-4">About Me</h2>
-<p>I'm Kristin Joy Plando, a BS Information Systems student at Davao del Norte State College. My interests include technical writing, documentation, web development, database systems, and creative writing. I enjoy creating user-friendly documentation and building practical digital solutions.</p>
-</section>
+    html { scroll-behavior: smooth; }
 
-<section id="projects" class="bg-white py-12">
-<div class="max-w-6xl mx-auto px-6">
-<h2 class="text-3xl font-bold mb-8">Featured Projects</h2>
-<div class="grid md:grid-cols-3 gap-6">
-<div class="border rounded-xl p-6"><h3 class="font-bold text-xl">Portfolio Website</h3><p class="mt-2">Responsive portfolio built using HTML, Tailwind CSS, and JavaScript.</p></div>
-<div class="border rounded-xl p-6"><h3 class="font-bold text-xl">Technical Documentation</h3><p class="mt-2">User guides and documentation demonstrating clear technical communication.</p></div>
-<div class="border rounded-xl p-6"><h3 class="font-bold text-xl">Information Systems Projects</h3><p class="mt-2">Academic projects covering databases, systems analysis, and web applications.</p></div>
-</div>
-</div>
-</section>
+    body {
+      margin: 0;
+      width: 100%;
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      overflow-x: hidden;
+    }
 
-<section id="skills" class="max-w-6xl mx-auto px-6 py-12">
-<h2 class="text-3xl font-bold mb-4">Skills</h2>
-<div class="flex flex-wrap gap-3">
-<span class="px-4 py-2 bg-slate-200 rounded">HTML</span>
-<span class="px-4 py-2 bg-slate-200 rounded">CSS</span>
-<span class="px-4 py-2 bg-slate-200 rounded">JavaScript</span>
-<span class="px-4 py-2 bg-slate-200 rounded">Tailwind CSS</span>
-<span class="px-4 py-2 bg-slate-200 rounded">Git</span>
-<span class="px-4 py-2 bg-slate-200 rounded">GitHub</span>
-<span class="px-4 py-2 bg-slate-200 rounded">SQL</span>
-<span class="px-4 py-2 bg-slate-200 rounded">Technical Writing</span>
-</div>
-</section>
+    button, input, textarea, a { font: inherit; }
 
-<section id="contact" class="bg-slate-900 text-white py-12">
-<div class="max-w-6xl mx-auto px-6">
-<h2 class="text-3xl font-bold">Contact</h2>
-<p class="mt-4">Email: <a href="mailto:kjplando58@gmail.com">kjplando58@gmail.com</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/kristin-joy-plando-plando-635288406">Profile</a></p>
-<p>GitHub: <a href="https://github.com/kjplando58-gif">kjplando58-gif</a></p>
-</div>
-</section>
+    .editorial-title {
+      font-family: "Fraunces", serif;
+      letter-spacing: -0.055em;
+      line-height: 0.93;
+    }
 
-<footer class="text-center py-6">
-© 2026 Kristin Joy Plando • Built with HTML & Tailwind CSS
-</footer>
-</body>
-</html>
+    .app-shell {
+      width: 100%;
+      min-height: 100%;
+      background-image:
+        linear-gradient(rgba(23, 23, 20, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 23, 20, 0.045) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+
+    .content-frame {
+      width: min(100% - 2rem, 1240px);
+      margin-inline: auto;
+    }
+
+    .site-header {
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .focusable:focus-visible,
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid var(--acid);
+      outline-offset: 3px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.72fr);
+      align-items: stretch;
+    }
+
+    .hero-photo-wrap {
+      min-height: 570px;
+      position: relative;
+      overflow: hidden;
+      border-left: 1px solid var(--line);
+    }
+
+    .hero-photo-wrap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(23,23,20,.46), transparent 48%);
+      pointer-events: none;
+    }
+
+    .hero-photo {
+      width: 100%;
+      height: 100%;
+      min-height: 570px;
+      object-fit: cover;
+      filter: saturate(.78) contrast(1.04);
+      transition: transform .8s cubic-bezier(.2,.8,.2,1);
+    }
+
+    .hero-photo-wrap:hover .hero-photo { transform: scale(1.025); }
+
+    .marquee-line {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee-track {
+      display: inline-flex;
+      min-width: max-content;
+      animation: marquee 24s linear infinite;
+    }
+
+    @keyframes marquee {
+      to { transform: translateX(-50%); }
+    }
+
+    .project-card {
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 20px 55px rgba(23,23,20,.13);
+    }
+
+    .project-image-wrap { overflow: hidden; }
+
+    .project-image {
+      transition: transform .65s cubic-bezier(.2,.8,.2,1), filter .4s ease;
+      filter: saturate(.7);
+    }
+
+    .project-card:hover .project-image {
+      transform: scale(1.045);
+      filter: saturate(1);
+    }
+
+    .project-details {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows .35s ease;
+    }
+
+    .project-details > div { overflow: hidden; }
+
+    .project-card.is-open .project-details { grid-template-rows: 1fr; }
+    .project-card.is-open .detail-open { display: none; }
+    .project-card:not(.is-open) .detail-close { display: none; }
+
+    .service-panel {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-panel::before {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      border-radius: 999px;
+      right: -85px;
+      top: -85px;
+      background: var(--acid);
+      transition: transform .45s ease;
+    }
+
+    .service-panel:hover::before { transform: scale(2.1); }
+
+    .service-panel > * { position: relative; z-index: 1; }
+
+    .field-control {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid rgba(244,240,231,.42);
+      background: transparent;
+      color: #f4f0e7;
+      padding: .8rem 0;
+      border-radius: 0;
+    }
+
+    .field-control::placeholder { color: rgba(244,240,231,.46); }
+    .field-control:focus { border-bottom-color: var(--acid); outline: none; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      animation: reveal .7s forwards cubic-bezier(.2,.8,.2,1);
+    }
+
+    .delay-1 { animation-delay: .08s; }
+    .delay-2 { animation-delay: .16s; }
+    .delay-3 { animation-delay: .24s; }
+
+    @keyframes reveal {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-photo-wrap {
+        min-height: 430px;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+      .hero-photo { min-height: 430px; }
+    }
+
+    @media (max-width: 767px) {
+      .desktop-nav { display: none; }
+      .mobile-nav.is-open { display: flex; }
+      .hero-photo-wrap, .hero-photo { min-height: 360px; }
+      .content-frame { width: min(100% - 1.25rem, 1240px); }
+    }
+
+    @media (min-width: 768px) {
+      .mobile-menu-button, .mobile-nav { display: none !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+  <script src="/_sdk/e3937a0574eb2d69.data_sdk.js" type="text/javascript" integrity="sha512-xbp/ACqEQy1aDxYMtXTrR3y5MUbzxuggRR/9sD48Gl4VhLMMCiAHsxMaFV6DTdeBpR6ymF+t2zhPKYkWM3+Jfw=="></script>
+  <script src="/_sdk/9432170dbd2ae0df.resizing_sdk.js" type="text/javascript" integrity="sha512-FeT+58sb1f9ejWPWFjCbJvTT+SDwGV+ngrHUnlO7TWEOoqwOLj6p256kO3vOL7DIWl1cIgrobiof8v2bOigwPg=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(244, 240, 231);">
+  <div class="app-shell w-full">
+   <header data-template-id="header-section" class="canva-header site-header sticky top-0 z-50 border-b border-black/15" style="background: rgba(244, 240, 231, 0.9);">
+    <div class="content-frame flex min-h-[72px] items-center justify-between gap-6"><a href="#top" class="focusable inline-flex items-center gap-3 no-underline" aria-label="Return to top"> <span class="flex h-9 w-9 items-center justify-center rounded-full bg-[#dfff38] text-[#171714]"> <i data-lucide="asterisk" class="h-5 w-5"></i> </span> <span data-template-id="brand-name" class="canva-text font-bold uppercase tracking-[0.12em]" style="color: rgb(23, 23, 20); font-weight: 700; font-style: normal; font-size: 15px;">Plando Studio</span> </a>
+     <nav class="desktop-nav flex items-center gap-8" aria-label="Primary navigation"><a data-template-id="nav-work" class="canva-link font-medium no-underline transition-opacity hover:opacity-55" href="#work" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;">Work</a> <a data-template-id="nav-services" class="canva-link font-medium no-underline transition-opacity hover:opacity-55" href="#services" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;">Services</a> <a data-template-id="nav-about" class="canva-link font-medium no-underline transition-opacity hover:opacity-55" href="#about" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;">About</a> <a data-template-id="header-cta" class="canva-button inline-flex items-center gap-2 rounded-full px-5 py-3 font-semibold no-underline transition-transform hover:-translate-y-0.5" href="#contact" style="background: rgb(23, 23, 20); color: rgb(255, 255, 255);"> <span data-template-id="header-cta-label" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Start a project</span> <i data-lucide="arrow-up-right" class="h-4 w-4"></i> </a>
+     </nav><button id="mobile-menu-button" class="mobile-menu-button focusable rounded-full border border-black/20 p-2.5" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"> <i data-lucide="menu" class="menu-icon h-5 w-5"></i> <i data-lucide="x" class="close-icon hidden h-5 w-5"></i> </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav hidden flex-col border-t border-black/15 px-4 py-4" aria-label="Mobile navigation"><a data-template-id="mobile-nav-work" class="canva-link border-b border-black/10 py-3 font-medium no-underline" href="#work" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;">Work</a> <a data-template-id="mobile-nav-services" class="canva-link border-b border-black/10 py-3 font-medium no-underline" href="#services" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;">Services</a> <a data-template-id="mobile-nav-about" class="canva-link border-b border-black/10 py-3 font-medium no-underline" href="#about" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;">About</a> <a data-template-id="mobile-nav-contact" class="canva-link py-3 font-semibold no-underline" href="#contact" style="color: rgb(21, 71, 232); font-weight: 400; font-style: normal; font-size: 16px;">Start a project</a>
+    </nav>
+   </header>
+   <main id="top">
+    <section data-template-id="hero-section" class="canva-section border-b border-black/15" style="background: rgb(244, 240, 231);">
+     <div class="content-frame hero-grid border-x border-black/15">
+      <div class="flex flex-col justify-between px-5 py-14 sm:px-9 sm:py-20 lg:px-14 lg:py-24">
+       <div>
+        <div class="reveal mb-8 inline-flex items-center gap-2 rounded-full border border-black/20 px-3 py-2"><span class="h-2 w-2 animate-pulse rounded-full bg-[#1547e8]"></span> <span data-template-id="availability-badge" class="canva-tag font-semibold uppercase tracking-[0.12em]" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 12px;">Available for select projects</span>
+        </div>
+        <h1 data-template-id="hero-title" class="canva-text editorial-title reveal delay-1 max-w-[760px]" style="color: rgb(23, 23, 20); font-weight: 700; font-style: normal; font-size: 47px; letter-spacing: -0.05rem; line-height: 0.95;">"The Narrative Technician:
+Bridging Code, Culture, and Creativity"</h1>
+        <p data-template-id="hero-description" class="canva-text reveal delay-2 mt-8 max-w-[590px] leading-relaxed" style="color: rgb(79, 78, 72); font-weight: 400; font-style: normal; font-size: 19px; line-height: 1.6;">I don’t just write about technology; I understand the systems, the data structures, and the user journeys that make it work.</p>
+        <div class="reveal delay-3 mt-10 flex flex-wrap gap-3"><a data-template-id="hero-primary-button" class="canva-button inline-flex items-center gap-3 rounded-full px-6 py-4 font-semibold no-underline transition-transform hover:-translate-y-1" href="#work" style="background: rgb(21, 71, 232); color: rgb(255, 255, 255);"> <span data-template-id="hero-primary-label" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Explore my work</span> <i data-lucide="arrow-down-right" class="h-5 w-5"></i> </a> <a data-template-id="hero-secondary-button" class="canva-button inline-flex items-center gap-3 rounded-full border px-6 py-4 font-semibold no-underline transition-colors hover:bg-black/5" href="#contact" style="background: transparent; color: rgb(23, 23, 20);"> <span data-template-id="hero-secondary-label" class="canva-text" style="color: rgb(23, 23, 20); font-weight: 600; font-style: normal; font-size: 16px;">Tell me your idea</span> </a>
+        </div>
+       </div>
+       <div class="mt-16 flex items-center gap-4">
+        <div class="h-px w-16 bg-black/35"></div>
+        <p data-template-id="hero-footnote" class="canva-text max-w-[360px] leading-relaxed" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 14px;">Creative Writings, crafted independently from Panabo City for teams around the world.</p>
+       </div>
+      </div>
+      <div class="hero-photo-wrap"><img data-template-id="hero-image" loading="lazy" class="canva-image hero-photo" src="images/suit.jpg" alt="74589_525109.webp">
+       <div data-template-id="experience-card" class="canva-card absolute bottom-5 left-5 right-5 z-10 flex items-end justify-between gap-5 rounded-2xl p-5 backdrop-blur-md sm:left-8 sm:right-auto sm:w-[310px]" style="background: rgba(23, 23, 20, 0.82);">
+        <div>
+         <p data-template-id="experience-eyebrow" class="canva-text mb-1 uppercase tracking-[0.13em]" style="color: rgb(223, 255, 56); font-weight: 400; font-style: normal; font-size: 11px;">Independent since 2026</p>
+         <p data-template-id="experience-text" class="canva-text font-semibold leading-tight" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 18px;">Small dreamer. Big heart and passion.</p>
+        </div><i data-lucide="sparkles" class="h-7 w-7 shrink-0 text-[#dfff38]"></i>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section data-template-id="stats-section" class="canva-section border-b border-black/15" style="background: rgb(223, 255, 56);">
+     <div class="content-frame grid grid-cols-1 border-x border-black/15 sm:grid-cols-3">
+      <div class="border-b border-black/15 p-6 sm:border-b-0 sm:border-r">
+       <p data-template-id="stat-one-number" class="canva-text editorial-title" style="color: rgb(23, 23, 20); font-weight: 700; font-style: normal; font-size: 48px;">42+</p>
+       <p data-template-id="stat-one-label" class="canva-text mt-2 uppercase tracking-[0.12em]" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 11px;">Projects launched</p>
+      </div>
+      <div class="border-b border-black/15 p-6 sm:border-b-0 sm:border-r">
+       <p data-template-id="stat-two-number" class="canva-text editorial-title" style="color: rgb(23, 23, 20); font-weight: 700; font-style: normal; font-size: 48px;">10</p>
+       <p data-template-id="stat-two-label" class="canva-text mt-2 uppercase tracking-[0.12em]" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 11px;">Countries reached</p>
+      </div>
+      <div class="p-6">
+       <p data-template-id="stat-three-number" class="canva-text editorial-title" style="color: rgb(23, 23, 20); font-weight: 700; font-style: normal; font-size: 48px;">96%</p>
+       <p data-template-id="stat-three-label" class="canva-text mt-2 uppercase tracking-[0.12em]" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 11px;">Referral-led work</p>
+      </div>
+     </div>
+    </section>
+    <section id="work" class="py-20 sm:py-28">
+     <div class="content-frame">
+      <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+       <div>
+        <p data-template-id="work-eyebrow" class="canva-text mb-4 font-semibold uppercase tracking-[0.14em]" style="color: rgb(21, 71, 232); font-weight: 400; font-style: normal; font-size: 12px;">Selected work — 2020–2026</p>
+        <h2 data-template-id="work-title" class="canva-text editorial-title max-w-[700px]" style="color: rgb(23, 23, 20); font-weight: 700; font-style: normal; font-size: 58px; letter-spacing: -0.04rem; line-height: 1;">My Portfolio:</h2>
+       </div>
+       <p data-template-id="work-intro" class="canva-text max-w-[390px] leading-relaxed" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 16px;">A snapshot of identity, writing, and output collaborations built through curiosity and close partnership.</p>
+      </div>
+      <div class="grid gap-6 lg:grid-cols-12">
+       <article data-template-id="project-one-card" class="canva-card project-card lg:col-span-7" style="background: rgb(255, 255, 255);">
+        <div class="project-image-wrap aspect-[4/3]"><img data-template-id="project-one-image" loading="lazy" class="canva-image project-image h-full w-full object-cover" src="images/CV.jpg" alt="15276_732463.webp">
+        </div>
+        <div class="p-6 sm:p-8">
+         <div class="flex items-center justify-between gap-4">
+          <p data-template-id="project-one-category" class="canva-tag rounded-full px-3 py-1.5 font-semibold uppercase tracking-[0.12em]" style="background: rgb(223, 255, 56); color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 11px;">My curriculom vitae:</p><span data-template-id="project-one-year" class="canva-text" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 13px;"></span>
+         </div>
+         <h3 data-template-id="project-one-title" class="canva-text editorial-title mt-6" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 29px;">The Tech-Savvy Communicator: </h3>
+         <p data-template-id="project-one-description" class="canva-text mt-4 max-w-[620px] leading-relaxed" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 16px;">As a BSIS student with a HUMSS background, combining technical data skills with creative and technical writing. I am an analytical thinker trained in statistical analysis and a dedicated public servant with hands-on civic experience in Panabo City.</p>
+         <div class="project-details">
+          <div>
+           <p data-template-id="project-one-detail" class="canva-text border-t border-black/15 pt-5 mt-5 leading-relaxed" style="color: rgb(79, 78, 72); font-weight: 400; font-style: normal; font-size: 14px;">My LinkedIn Account:  www.linkedin.com/in/kristin-joy-plando-plando-635288406
+My Gmail Account: kjplando58@gmail.com</p>
+          </div>
+         </div><button class="project-toggle focusable mt-6 inline-flex items-center gap-2 font-semibold" type="button" aria-expanded="false"> <span data-template-id="project-open-label" class="canva-text detail-open" style="color: rgb(23, 23, 20); font-weight: 600; font-style: normal; font-size: 16px;">Project details</span> <span data-template-id="project-close-label" class="canva-text detail-close" style="color: rgb(23, 23, 20); font-weight: 600; font-style: normal; font-size: 16px;">Close details</span> <i data-lucide="plus" class="detail-open h-4 w-4"></i> <i data-lucide="minus" class="detail-close h-4 w-4"></i> </button>
+        </div>
+       </article>
+       <article data-template-id="project-two-card" class="canva-card project-card lg:col-span-5" style="background: rgb(21, 71, 232);">
+        <div class="project-image-wrap aspect-square"><img data-template-id="project-two-image" loading="lazy" class="canva-image project-image h-full w-full object-cover" src="images/poem1.jpg" alt="616002_774975.webp">
+        </div>
+        <div class="p-6 sm:p-8">
+         <div class="flex items-center justify-between gap-4">
+          <p data-template-id="project-two-category" class="canva-tag rounded-full px-3 py-1.5 font-semibold uppercase tracking-[0.12em]" style="background: rgb(223, 255, 56); color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 11px;">My WORKS:</p><span data-template-id="project-two-year" class="canva-text" style="color: rgb(203, 213, 255); font-weight: 400; font-style: normal; font-size: 13px;">2025</span>
+         </div>
+         <h3 data-template-id="project-two-title" class="canva-text editorial-title mt-6" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 36px;">"Neither boast nor Lies"</h3>
+         <p data-template-id="project-two-description" class="canva-text mt-4 leading-relaxed" style="color: rgb(220, 227, 255); font-weight: 400; font-style: normal; font-size: 16px;">This piece, titled "Neither boast nor Lies," is wonderfully creative, whimsical, and vastly different from the grounded, romantic tone of your previous poem! It has a playful, legendary quality to it.
+</p>
+         <div class="project-details">
+          <div>
+           <p data-template-id="project-two-detail" class="canva-text border-t border-black/15 pt-5 mt-5 leading-relaxed" style="color: rgb(220, 227, 255); font-weight: 400; font-style: normal; font-size: 14px;">Scope: "Boast Poem" and
+"Exaggerated Identity Poem"</p>
+          </div>
+         </div><button class="project-toggle focusable mt-6 inline-flex items-center gap-2 font-semibold" type="button" aria-expanded="false"> <span data-template-id="project-open-label" class="canva-text detail-open" style="color: rgb(23, 23, 20); font-weight: 600; font-style: normal; font-size: 16px;">Project details</span> <span data-template-id="project-close-label" class="canva-text detail-close" style="color: rgb(23, 23, 20); font-weight: 600; font-style: normal; font-size: 16px;">Close details</span> <i data-lucide="plus" class="detail-open h-4 w-4"></i> <i data-lucide="minus" class="detail-close h-4 w-4"></i> </button>
+        </div>
+       </article>
+       <article data-template-id="project-three-card" class="canva-card project-card lg:col-span-12 lg:grid lg:grid-cols-2" style="background: rgb(255, 255, 255);">
+        <div class="project-image-wrap min-h-[360px]"><img data-template-id="project-three-image" loading="lazy" class="canva-image project-image h-full w-full object-cover" src="images/poem2.jpg" alt="40241_89400.webp">
+        </div>
+        <div class="flex flex-col justify-center p-6 sm:p-10">
+         <div class="flex items-center justify-between gap-4">
+          <p data-template-id="project-three-category" class="canva-tag rounded-full px-3 py-1.5 font-semibold uppercase tracking-[0.12em]" style="background: rgb(223, 255, 56); color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 11px;">Creative Writing:</p><span data-template-id="project-three-year" class="canva-text" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 13px;">2024</span>
+         </div>
+         <h3 data-template-id="project-three-title" class="canva-text editorial-title mt-8" style="color: rgb(23, 23, 20); font-weight: 700; font-style: normal; font-size: 42px;">"Sonnet"</h3>
+         <p data-template-id="project-three-description" class="canva-text mt-5 max-w-[520px] leading-relaxed" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 16px;">This poem is a vulnerable confession of infatuation, capturing how a crush can completely inspire you and dominate your thoughts. It expresses a willingness to face the pressure and challenges of these feelings, ending with a direct plea for the person to accept your heart.</p>
+         <div class="project-details">
+          <div>
+           <p data-template-id="project-three-detail" class="canva-text border-t border-black/15 pt-5 mt-5 leading-relaxed" style="color: rgb(79, 78, 72); font-weight: 400; font-style: normal; font-size: 14px;">Scope: Storytelling
+Scriptwriting, and 
+Poetry </p>
+          </div>
+         </div><button class="project-toggle focusable mt-7 inline-flex w-fit items-center gap-2 font-semibold" type="button" aria-expanded="false"> <span data-template-id="project-open-label" class="canva-text detail-open" style="color: rgb(23, 23, 20); font-weight: 600; font-style: normal; font-size: 16px;">Project details</span> <span data-template-id="project-close-label" class="canva-text detail-close" style="color: rgb(23, 23, 20); font-weight: 600; font-style: normal; font-size: 16px;">Close details</span> <i data-lucide="plus" class="detail-open h-4 w-4"></i> <i data-lucide="minus" class="detail-close h-4 w-4"></i> </button>
+        </div>
+       </article>
+      </div>
+     </div>
+    </section>
+    <section data-template-id="ticker-section" class="canva-banner marquee-line border-y border-black/15 py-4" style="background: rgb(23, 23, 20);">
+     <div class="marquee-track"><span data-template-id="ticker-text" class="canva-text px-8 font-semibold uppercase tracking-[0.12em]" style="color: rgb(244, 240, 231); font-weight: 400; font-style: normal; font-size: 14px;">Strategy ✦ Identity ✦ Websites ✦ Digital products ✦ Creative direction ✦ </span> <span data-template-id="ticker-text" class="canva-text px-8 font-semibold uppercase tracking-[0.12em]" aria-hidden="true" style="color: rgb(244, 240, 231); font-weight: 400; font-style: normal; font-size: 14px;">Strategy ✦ Identity ✦ Websites ✦ Digital products ✦ Creative direction ✦ </span> <span data-template-id="ticker-text" class="canva-text px-8 font-semibold uppercase tracking-[0.12em]" aria-hidden="true" style="color: rgb(244, 240, 231); font-weight: 400; font-style: normal; font-size: 14px;">Strategy ✦ Identity ✦ Websites ✦ Digital products ✦ Creative direction ✦ </span> <span data-template-id="ticker-text" class="canva-text px-8 font-semibold uppercase tracking-[0.12em]" aria-hidden="true" style="color: rgb(244, 240, 231); font-weight: 400; font-style: normal; font-size: 14px;">Strategy ✦ Identity ✦ Websites ✦ Digital products ✦ Creative direction ✦ </span>
+     </div>
+    </section>
+    <section id="services" data-template-id="services-section" class="canva-section py-20 sm:py-28" style="background: rgb(244, 240, 231);">
+     <div class="content-frame">
+      <p data-template-id="services-eyebrow" class="canva-text mb-4 font-semibold uppercase tracking-[0.14em]" style="color: rgb(21, 71, 232); font-weight: 400; font-style: normal; font-size: 12px;">What I do</p>
+      <h2 data-template-id="services-title" class="canva-text editorial-title max-w-[760px]" style="color: rgb(23, 23, 20); font-weight: 700; font-style: normal; font-size: 58px; letter-spacing: -0.04rem; line-height: 1;">Flexible creative writing, 
+and Services offered.</h2>
+      <div class="mt-12 grid gap-px overflow-hidden rounded-3xl border border-black/15 bg-black/15 md:grid-cols-3">
+       <article data-template-id="service-one-card" class="canva-card service-panel p-7 sm:p-9" style="background: rgb(255, 255, 255);"><span data-template-id="service-one-number" class="canva-tag inline-flex h-10 w-10 items-center justify-center rounded-full font-semibold" style="background: rgb(23, 23, 20); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">01</span>
+        <h3 data-template-id="service-one-title" class="canva-text mt-20 font-bold" style="color: rgb(23, 23, 20); font-weight: 700; font-style: normal; font-size: 26px;">Technical Writing: Manuals, user guides, and documentation.</h3>
+        <p data-template-id="service-one-description" class="canva-text mt-4 leading-relaxed" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 16px;">I provide good Technical Writing to ensure that my customers can navigate your products without friction.</p>
+        <p data-template-id="service-one-list" class="canva-text mt-8 border-t border-black/15 pt-5 font-medium leading-loose" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 14px;">: User Guides &amp; Manuals
+: API &amp; Software Documentation</p>
+       </article>
+       <article data-template-id="service-two-card" class="canva-card service-panel p-7 sm:p-9" style="background: rgb(255, 255, 255);"><span data-template-id="service-two-number" class="canva-tag inline-flex h-10 w-10 items-center justify-center rounded-full font-semibold" style="background: rgb(23, 23, 20); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">02</span>
+        <h3 data-template-id="service-two-title" class="canva-text mt-20 font-bold" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 26px;">Document Translation:</h3>
+        <p data-template-id="service-two-description" class="canva-text mt-4 leading-relaxed" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 16px;">I provide detailed Document Translation to enhance the quality and impact of your manuscript by breaking down language barriers while maintaining accuracy.</p>
+        <p data-template-id="service-two-list" class="canva-text mt-8 border-t border-black/15 pt-5 font-medium leading-loose" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 14px;">: Translating Contracts
+: Academic Papers
+: Legal Documents</p>
+       </article>
+       <article data-template-id="service-three-card" class="canva-card service-panel p-7 sm:p-9" style="background: rgb(255, 255, 255);"><span data-template-id="service-three-number" class="canva-tag inline-flex h-10 w-10 items-center justify-center rounded-full font-semibold" style="background: rgb(23, 23, 20); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">03</span>
+        <h3 data-template-id="service-three-title" class="canva-text mt-20 font-bold" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 26px;">Creative Writing: Story writing, poetry, and scriptwriting.</h3>
+        <p data-template-id="service-three-description" class="canva-text mt-4 leading-relaxed" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 16px;">I provide a platform where Creative Writing hooks visitors with a compelling story.</p>
+        <p data-template-id="service-three-list" class="canva-text mt-8 border-t border-black/15 pt-5 font-medium leading-loose" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 14px;">: Storytelling 
+: Scriptwriting
+: Poetry</p>
+       </article>
+      </div>
+     </div>
+    </section>
+    <section id="about" class="border-y border-black/15">
+     <div class="content-frame grid border-x border-black/15 lg:grid-cols-2">
+      <div class="min-h-[520px] border-b border-black/15 lg:border-b-0 lg:border-r"><img data-template-id="profile-photo" loading="lazy" class="canva-image h-full min-h-[520px] w-full object-cover grayscale"  src="images/profile.jpg " alt="257490_676602.webp">
+      </div>
+      <div data-template-id="about-panel" class="canva-panel flex flex-col justify-center p-7 sm:p-12 lg:p-16" style="background: rgb(255, 255, 255);">
+       <p data-template-id="about-eyebrow" class="canva-text mb-5 font-semibold uppercase tracking-[0.14em]" style="color: rgb(21, 71, 232); font-weight: 400; font-style: normal; font-size: 12px;">Behind the work</p>
+       <h2 data-template-id="about-title" class="canva-text editorial-title" style="color: rgb(23, 23, 20); font-weight: 700; font-style: normal; font-size: 46px; letter-spacing: -0.04rem; line-height: 1.05;">Hi, I’m Kristin — your narrative technician partner from first sketch to launch.</h2>
+       <p data-template-id="about-description" class="canva-text mt-7 leading-relaxed" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 17px;">As a student of Information Systems student at Davao del Norte State College (DNSC), I combine the logical precision of a systems analyst with the narrative flair of a seasoned author. My work exists at the intersection of technical architecture and human experience, ensuring that whether a user is reading a software manual or a dramatic script, the message is clear, engaging, and accessible.
+
+</p>
+       <div class="mt-9 grid grid-cols-2 gap-4 border-t border-black/15 pt-7">
+        <p data-template-id="skill-one" class="canva-tag font-semibold" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;">Creative Writing</p>
+        <p data-template-id="skill-two" class="canva-tag font-semibold" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;">Document Translation</p>
+        <p data-template-id="skill-three" class="canva-tag font-semibold" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;">Technical Writing</p>
+        <p data-template-id="skill-four" class="canva-tag font-semibold" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;"></p>
+       </div>
+       <div data-template-id="availability-note" class="canva-banner mt-10 flex items-center gap-4 rounded-2xl p-5" style="background: rgb(223, 255, 56); color: rgb(23, 23, 20);"><i data-lucide="calendar-check" class="h-6 w-6 shrink-0"></i>
+        <p data-template-id="availability-note-text" class="canva-text font-semibold leading-relaxed" style="color: rgb(23, 23, 20); font-weight: 400; font-style: normal; font-size: 16px;">Now booking focused projects for August and September 2026.</p>
+       </div>
+       <nav class="mt-10 flex gap-6" aria-label="Social links"><a data-template-id="about-social-linkedin" class="canva-link inline-flex items-center justify-center transition-opacity hover:opacity-70" href="https://www.linkedin.com/in/kristin-joy-plando-plando-635288406" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="color: rgb(23, 23, 20); font-size: 20px;"> <i data-lucide="linkedin" class="h-7 w-7"></i> </a> <a data-template-id="about-social-gmail" class="canva-link inline-flex items-center justify-center transition-opacity hover:opacity-70" href="mailto:kjplando58@gmail.com" aria-label="Email" style="color: rgb(23, 23, 20); font-size: 20px;"> <i data-lucide="mail" class="h-7 w-7"></i> </a> <a data-template-id="about-social-github" class="canva-link inline-flex items-center justify-center transition-opacity hover:opacity-70" href="https://github.com/kjplando58-gif" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style="color: rgb(23, 23, 20); font-size: 20px;"> <i data-lucide="github" class="h-7 w-7"></i> </a>
+       </nav>
+      </div>
+     </div>
+    </section>
+    <section id="contact" data-template-id="contact-section" class="canva-section py-20 sm:py-28" style="background: rgb(23, 23, 20);">
+     <div class="content-frame grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
+      <div>
+       <p data-template-id="contact-eyebrow" class="canva-text mb-5 font-semibold uppercase tracking-[0.14em]" style="color: rgb(223, 255, 56); font-weight: 400; font-style: normal; font-size: 12px;">Have a project in mind?</p>
+       <h2 data-template-id="contact-title" class="canva-text editorial-title" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 58px; letter-spacing: -0.04rem; line-height: 1;">Let’s make something. Contact me here.</h2>
+       <p data-template-id="contact-description" class="canva-text mt-7 max-w-[470px] leading-relaxed" style="color: rgb(185, 184, 176); font-weight: 400; font-style: normal; font-size: 17px;">
+</p><a data-template-id="contact-email" class="canva-link mt-8 inline-flex items-center gap-3 font-semibold underline decoration-2 underline-offset-8" href="mailto:kjplando58@gmail.com" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 18px;">kjplando58@gmail.com</a>
+      </div>
+      <div data-template-id="contact-form-panel" class="canva-panel rounded-3xl p-6 sm:p-9" style="background: rgb(35, 35, 31);">
+       <form id="contact-form" novalidate="">
+        <div class="grid gap-7 sm:grid-cols-2">
+         <div><label data-template-id="name-label" class="canva-text block font-semibold" for="name" style="color: rgb(244, 240, 231); font-weight: 400; font-style: normal; font-size: 16px;">Your name</label> <input data-template-id="name-input" class="canva-input field-control mt-2" id="name" name="name" type="text" autocomplete="name" required="" placeholder="How should I address you?" style="color: rgb(244, 240, 231); font-weight: 400; font-style: normal; font-size: 16px;">
+          <p id="name-error" data-template-id="name-error" class="canva-text mt-2 hidden" role="alert" style="color: rgb(255, 157, 141); font-weight: 400; font-style: normal; font-size: 13px;">Please enter at least two characters.</p>
+         </div>
+         <div><label data-template-id="email-label" class="canva-text block font-semibold" for="email" style="color: rgb(244, 240, 231); font-weight: 400; font-style: normal; font-size: 16px;">Email address</label> <input data-template-id="email-input" class="canva-input field-control mt-2" id="email" name="email" type="email" autocomplete="email" required="" placeholder="you@company.com" style="color: rgb(244, 240, 231); font-weight: 400; font-style: normal; font-size: 16px;">
+          <p id="email-error" data-template-id="email-error" class="canva-text mt-2 hidden" role="alert" style="color: rgb(255, 157, 141); font-weight: 400; font-style: normal; font-size: 13px;">Please enter a valid email address.</p>
+         </div>
+        </div>
+        <div class="mt-8"><label data-template-id="brief-label" class="canva-text block font-semibold" for="brief" style="color: rgb(244, 240, 231); font-weight: 400; font-style: normal; font-size: 16px;">Project brief</label> <textarea data-template-id="brief-input" class="canva-input field-control mt-2 min-h-[130px] resize-y" id="brief" name="brief" required="" style="color: rgb(244, 240, 231); font-weight: 400; font-style: normal; font-size: 16px;">Tell me what you’re building, what you need, and when you’d like to launch.</textarea>
+         <p id="brief-error" data-template-id="brief-error" class="canva-text mt-2 hidden" role="alert" style="color: rgb(255, 157, 141); font-weight: 400; font-style: normal; font-size: 13px;">Please share at least a short sentence about your project.</p>
+        </div><button id="submit-button" data-template-id="submit-button" class="canva-button mt-9 inline-flex min-w-[190px] items-center justify-center gap-3 rounded-full px-6 py-4 font-semibold transition-transform hover:-translate-y-1 disabled:cursor-wait disabled:opacity-70" type="submit" style="background: rgb(223, 255, 56); color: rgb(23, 23, 20);"> <span data-template-id="submit-idle-label" class="canva-text submit-idle" style="color: rgb(23, 23, 20); font-weight: 600; font-style: normal; font-size: 16px;">Send project note</span> <span data-template-id="submit-loading-label" class="canva-text submit-loading hidden" style="color: rgb(23, 23, 20); font-weight: 600; font-style: normal; font-size: 16px;">Sending…</span> <i data-lucide="send" class="submit-idle h-5 w-5"></i> <i data-lucide="loader-circle" class="submit-loading hidden h-5 w-5 animate-spin"></i> </button>
+       </form>
+       <div id="success-state" class="hidden py-8" role="status" aria-live="polite">
+        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#dfff38] text-[#171714]"><i data-lucide="check" class="h-7 w-7"></i>
+        </div>
+        <h3 data-template-id="success-title" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 28px;">Your note is ready.</h3>
+        <p data-template-id="success-message" class="canva-text mt-4 max-w-[500px] leading-relaxed"></p><button id="reset-form-button" data-template-id="reset-form-button" class="canva-button mt-7 rounded-full border px-5 py-3 font-semibold" type="button" style="background: transparent; color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Send another note</button>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer data-template-id="footer-section" class="canva-footer border-t border-black/15 py-8" style="background: rgb(244, 240, 231);">
+    <div class="content-frame flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
+     <p data-template-id="footer-text" class="canva-text" style="color: rgb(101, 100, 93); font-weight: 400; font-style: normal; font-size: 14px;">© 2026 Kjoy. Independent and intentional.</p>
+    </div>
+   </footer>
+  </div>
+  <script src="/_sdk/0e8f359d3c23f6d5.editing_sdk.js" integrity="sha512-CBLuYm/olmgyMedTtPRFeqCRZcSWUh6/39ewyXAbnr1dsVHBACzZ59KGJZXvuWNHOHixfWegfuMN9JzmLEDIoA=="></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+
+      const menuButton = document.getElementById("mobile-menu-button");
+      const mobileNav = document.getElementById("mobile-nav");
+      const menuIcon = menuButton.querySelector(".menu-icon");
+      const closeIcon = menuButton.querySelector(".close-icon");
+
+      function closeMenu() {
+        mobileNav.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+      }
+
+      menuButton.addEventListener("click", () => {
+        const isOpen = mobileNav.classList.toggle("is-open");
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuIcon.classList.toggle("hidden", isOpen);
+        closeIcon.classList.toggle("hidden", !isOpen);
+      });
+
+      mobileNav.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      document.querySelectorAll(".project-toggle").forEach(button => {
+        button.addEventListener("click", () => {
+          const card = button.closest(".project-card");
+          const isOpen = card.classList.toggle("is-open");
+          button.setAttribute("aria-expanded", String(isOpen));
+        });
+      });
+
+      const form = document.getElementById("contact-form");
+      const submitButton = document.getElementById("submit-button");
+      const successState = document.getElementById("success-state");
+      const resetButton = document.getElementById("reset-form-button");
+
+      const fields = {
+        name: {
+          input: document.getElementById("name"),
+          error: document.getElementById("name-error")
+        },
+        email: {
+          input: document.getElementById("email"),
+          error: document.getElementById("email-error")
+        },
+        brief: {
+          input: document.getElementById("brief"),
+          error: document.getElementById("brief-error")
+        }
+      };
+
+      function setError(field, hasError) {
+        field.error.classList.toggle("hidden", !hasError);
+        field.input.setAttribute("aria-invalid", String(hasError));
+        if (hasError) {
+          field.input.setAttribute("aria-describedby", field.error.id);
+        } else {
+          field.input.removeAttribute("aria-describedby");
+        }
+      }
+
+      function validateForm() {
+        const nameInvalid = fields.name.input.value.trim().length < 2;
+        const emailValue = fields.email.input.value.trim();
+        const emailInvalid = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
+        const briefInvalid = fields.brief.input.value.trim().length < 10;
+
+        setError(fields.name, nameInvalid);
+        setError(fields.email, emailInvalid);
+        setError(fields.brief, briefInvalid);
+
+        const firstInvalid = [fields.name, fields.email, fields.brief]
+          .find(field => field.input.getAttribute("aria-invalid") === "true");
+
+        if (firstInvalid) firstInvalid.input.focus();
+        return !firstInvalid;
+      }
+
+      Object.values(fields).forEach(field => {
+        field.input.addEventListener("input", () => setError(field, false));
+      });
+
+      form.addEventListener("submit", event => {
+        event.preventDefault();
+        if (!validateForm()) return;
+
+        submitButton.disabled = true;
+        submitButton.querySelectorAll(".submit-idle").forEach(el => el.classList.add("hidden"));
+        submitButton.querySelectorAll(".submit-loading").forEach(el => el.classList.remove("hidden"));
+
+        window.setTimeout(() => {
+          form.classList.add("hidden");
+          successState.classList.remove("hidden");
+          submitButton.disabled = false;
+          submitButton.querySelectorAll(".submit-idle").forEach(el => el.classList.remove("hidden"));
+          submitButton.querySelectorAll(".submit-loading").forEach(el => el.classList.add("hidden"));
+        }, 850);
+      });
+
+      resetButton.addEventListener("click", () => {
+        form.reset();
+        Object.values(fields).forEach(field => setError(field, false));
+        successState.classList.add("hidden");
+        form.classList.remove("hidden");
+        fields.name.input.focus();
+      });
+    });
+  </script>
+ 
+</body></html>
